@@ -1,0 +1,15 @@
+{
+  "name": "app-install-tutorial",
+  "version": "1.0.0",
+  "description": "Source code for FlockOS tutorial on saving authentication tokens. Read the tutorial at https://docs.flock.co/display/flockos/Saving+Authentication+Tokens",
+  "main": "index.js",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flockchat/app-install-tutorial-nodejs.git"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "flockos": "^0.0.4"
+  }
+}
