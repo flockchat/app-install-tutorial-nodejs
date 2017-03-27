@@ -25,7 +25,8 @@ Most of these steps are described in more detail in the [tutorial][],
     ```js
     module.exports = {
         appId: '27ed9330-6710-4983-9380-9f0748ca6b41',
-        appSecret: '0ef85922-849a-4397-9564-94247f95dd7c'
+        appSecret: '0ef85922-849a-4397-9564-94247f95dd7c',
+        baseUrl: 'https://x-x-x-x.ngrok.io'
     };
 
     ```
