@@ -1,15 +1,13 @@
 var flock = require('flockos');
+var config = require('./config.js');
 var express = require('express');
 var fs = require('fs');
 
-var config = require('./config.js');
 
 // Prefill all the configurations in the flock node_module index.js
 flock.appId = config.appId;
 flock.appSecret = config.appSecret;
 flock.baseUrl = config.baseUrl;
-
-// Create an express instance
 var app = express();
 
 // Listen for events on /events, and verify event tokens using the token verifier.
@@ -37,7 +35,7 @@ flock.events.on('app.uninstall', function (event, callback) {
 });
 
 // Start the listener after reading the port from config
-var port = config.port || 3000;
+var port = config.port || 8080;
 app.listen(port, function () {
     console.log('Listening on port: ' + port);
 });
